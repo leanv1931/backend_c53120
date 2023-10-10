@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Nuevo título x2",
+    "description": "Nueva descripción x2 ",
+    "price": 11,
+    "thumbnail": "nueva-imagen.jpg x2",
+    "code": "abc12345",
+    "stock": 22
+  },
+  {
+    "id": 2,
+    "title": "Nuevo título x2",
+    "description": "Nueva descripción x2 ",
+    "price": 11,
+    "thumbnail": "nueva-imagen.jpg x2",
+    "code": "abc123456",
+    "stock": 22
+  },
+  {
+    "id": 3,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "abc1234567",
+    "stock": 25
+  },
+  {
+    "id": 4,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "abc12345678",
+    "stock": 25
+  },
+  {
+    "id": 5,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "abc12345679",
+    "stock": 25
+  },
+  {
+    "id": 6,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "12345679",
+    "stock": 25
+  },
+  {
+    "id": 7,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "999",
+    "stock": 25
+  },
+  {
+    "id": 8,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "888",
+    "stock": 25
+  },
+  {
+    "id": 9,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "8888",
+    "stock": 25
+  },
+  {
+    "id": 10,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "888899",
+    "stock": 25
+  }
+]
