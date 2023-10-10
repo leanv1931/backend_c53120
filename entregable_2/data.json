@@ -91,20 +91,20 @@
   },
   {
     "id": 17,
-    "title": "producto prueba",
-    "description": "description del nuevo producto",
-    "price": 200,
-    "thumbnail": "imagen.jpg",
+    "title": "Nuevo título - new ",
+    "description": "Nueva descripción- new  ",
+    "price": 11,
+    "thumbnail": "nueva-imagen.jpg - new ",
     "code": "111288382289222291",
-    "stock": 25
+    "stock": 22
   },
   {
-    "id": 18,
+    "id": 19,
     "title": "producto prueba",
     "description": "description del nuevo producto",
     "price": 200,
     "thumbnail": "imagen.jpg",
-    "code": "111282228382289222291",
+    "code": "111222282228382289222291",
     "stock": 25
   }
 ]

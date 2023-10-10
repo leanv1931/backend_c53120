@@ -6,7 +6,7 @@ async function main() {
 
     await manager.init();
 
-    await manager.addProduct("producto prueba", "description del nuevo producto", 200, "imagen.jpg", "111282228382289222291", 25);
+    await manager.addProduct("producto prueba", "description del nuevo producto", 200, "imagen.jpg", "111222282228382289222291", 25);
 
 
     const productos = await manager.getProducts();
@@ -16,7 +16,7 @@ async function main() {
     console.log('############# MOSTRAR PRODUCTO BY ID#############');
 
 
-    const productId = 4; 
+    const productId = 17; 
     const product = await manager.getProductById(productId);
     console.log('Producto encontrado:', product);
 
@@ -35,19 +35,8 @@ async function main() {
 
 
     console.log('############# DELETE EL MODIFICADO #############');
-    await manager.deleteProductById(16);
+    await manager.deleteProductById(18);
     await manager.getProductById(productId);
-
-
-
-
-
-
-
-
-
-
-
       
 }
 
