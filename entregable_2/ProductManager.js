@@ -85,17 +85,38 @@ class ProductManager {
             }
 
             // Actualizar el producto con los nuevos datos
-            this.products[productIndex] = {
-                ...this.products[productIndex],
-                ...newData
-            };
+            this.products[productIndex] = { ...this.products[productIndex], ...newData };
 
-            // Guardar los productos actualizados en el archivo
+            // Guardarr en el archivo
             await this.saveData();
 
             console.log('Producto actualizado correctamente.');
         } catch (error) {
             console.error("Error al actualizar el producto:", error);
+            throw error; 
+        }
+    }
+
+    async deleteProductById(id) {
+        try {
+            const data = await fs.readFile(this.filePath, 'utf8');
+            this.products = JSON.parse(data);
+
+            const productIndex = this.products.findIndex(product => product.id === id);
+            if (productIndex === -1) {
+                console.error("Error: Producto no encontrado.");
+                return;
+            }
+
+            // Eliminar el producto del array
+            this.products.splice(productIndex, 1);
+
+            // Guardar los productos actualizados en el archivo
+            await this.saveData();
+
+            console.log('Producto eliminado correctamente.');
+        } catch (error) {
+            console.error("Error al eliminar el producto:", error);
             throw error; 
         }
     }

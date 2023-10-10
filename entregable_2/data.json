@@ -18,42 +18,6 @@
     "stock": 22
   },
   {
-    "id": 3,
-    "title": "producto prueba",
-    "description": "description del nuevo producto",
-    "price": 200,
-    "thumbnail": "imagen.jpg",
-    "code": "abc1234567",
-    "stock": 25
-  },
-  {
-    "id": 4,
-    "title": "producto prueba",
-    "description": "description del nuevo producto",
-    "price": 200,
-    "thumbnail": "imagen.jpg",
-    "code": "abc12345678",
-    "stock": 25
-  },
-  {
-    "id": 5,
-    "title": "producto prueba",
-    "description": "description del nuevo producto",
-    "price": 200,
-    "thumbnail": "imagen.jpg",
-    "code": "abc12345679",
-    "stock": 25
-  },
-  {
-    "id": 6,
-    "title": "producto prueba",
-    "description": "description del nuevo producto",
-    "price": 200,
-    "thumbnail": "imagen.jpg",
-    "code": "12345679",
-    "stock": 25
-  },
-  {
     "id": 7,
     "title": "producto prueba",
     "description": "description del nuevo producto",
@@ -72,21 +36,75 @@
     "stock": 25
   },
   {
-    "id": 9,
-    "title": "producto prueba",
-    "description": "description del nuevo producto",
-    "price": 200,
-    "thumbnail": "imagen.jpg",
-    "code": "8888",
-    "stock": 25
-  },
-  {
     "id": 10,
     "title": "producto prueba",
     "description": "description del nuevo producto",
     "price": 200,
     "thumbnail": "imagen.jpg",
     "code": "888899",
+    "stock": 25
+  },
+  {
+    "id": 11,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "8888991",
+    "stock": 25
+  },
+  {
+    "id": 12,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "88388991",
+    "stock": 25
+  },
+  {
+    "id": 13,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "8838892291",
+    "stock": 25
+  },
+  {
+    "id": 14,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "1118838892291",
+    "stock": 25
+  },
+  {
+    "id": 15,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "11128838892291",
+    "stock": 25
+  },
+  {
+    "id": 17,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "111288382289222291",
+    "stock": 25
+  },
+  {
+    "id": 18,
+    "title": "producto prueba",
+    "description": "description del nuevo producto",
+    "price": 200,
+    "thumbnail": "imagen.jpg",
+    "code": "111282228382289222291",
     "stock": 25
   }
 ]
