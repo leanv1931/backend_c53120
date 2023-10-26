@@ -14,6 +14,10 @@ async function main() {
     productos = await manager.getProducts();
 }
 
+app.get('/', (req, res) => {
+    res.send('Hola desde el servidor de express.');
+  });
+
 
 app.get('/products', async (req, res) => {
     await main();
@@ -42,6 +46,6 @@ app.get('/products/:pid', async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
+app.listen(8108, () => {
     console.log('Servidor http escuchando en el puerto 8080.');
 })
