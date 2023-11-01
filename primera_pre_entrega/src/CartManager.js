@@ -1,13 +1,11 @@
 const fs = require('fs').promises;
 
-
 class CartManager {
     constructor(filePathCarrito) {
         this.filePathCarrito = filePathCarrito;
         this.shoppingCarts = [];
         this.nextProductId = 1; // Inicializa el ID autoincrementable
     }
-    
 
     async init() {
         try {
@@ -22,7 +20,6 @@ class CartManager {
             }
             
         } catch (error) {
-            // Si el archivo no existe o hay un error al leerlo, inicializamos con un array vacío.
             this.shoppingCarts = [];
             this.nextProductId = 1;
         }
@@ -33,69 +30,88 @@ class CartManager {
         return this.shoppingCarts;
     }
 
-    async getProductById(id) {
+    async getCarritoById(id) {
         try {
-            const data = await fs.readFile(this.filePath, 'utf8');
+            const data = await fs.readFile(this.filePathCarrito, 'utf8');
             this.shoppingCarts = JSON.parse(data);
-            return this.shoppingCarts;
             
-        /*     const product = this.products.find(product => product.id === id);
-            if (!product) {
-                console.error("Error: Producto no encontrado.");
+            const cart= this.shoppingCarts.find(cart => cart.id === id);
+            if (!cart) {
+                console.error("Error: carrito no encontrado.");
             } else {
-                return product;
-            }*/
+                return cart;
+            }
         } catch (error) {
             console.error("Error al leer el archivo:", error);
             throw error; 
-        } 
+        }
     }
 
-
-
-    async addCart(newData, cartId, prodId) {
-
-    /*     if (newData.id) {
-            console.error("id debe ser auto-generado.");
+    async addCart(newData) {
+        if (this.shoppingCarts.some(cart => cart.id === newData.id)) {
+            console.error("El campo 'id' no puede repetirse.");
             return null; 
-        }
- */
-       /*  if (!newData.products) {
-            console.error("Todos los campos son obligatorios.");
-            return null; 
-        } */
-        
-       
-       /*  const existingIndex = this.shoppingCarts.findIndex(cart => cart.id === newData.id);
-        if (existingIndex !== -1) {
-                console.error("Error: El ID en newData ya existe en otro carrito de compras.");
-                return null; 
-        }
- */
-
-
-        if (newData) {
+        }else{
             const cart = {
                 id: this.nextProductId,
-                ...newData,
+                carrito: newData.carrito
             };
             this.shoppingCarts.push(cart);
             this.nextProductId++; 
             await this.saveData();
             return cart;
-
-        }       
+        }
     }
 
+    async addProductToCart(cartId, productId, body) {
+        try {
+            const data = await fs.readFile(this.filePathCarrito, 'utf8');
+            this.shoppingCarts = JSON.parse(data);
+    
+            const cartIndex = this.shoppingCarts.findIndex(cart => cart.id === cartId);
+            
+            if (cartIndex === -1) {
+                console.error("Error: carrito no encontrado.");
+                return null;
+            }
+    
+            const myCarrito = this.shoppingCarts[cartIndex];
+            const existingProductIndex = myCarrito.carrito.findIndex(p => p.product === productId);
 
-
+            const additionalQuantity = parseInt(body.quantity);
+            if (isNaN(additionalQuantity)) {
+                console.error("Error: cantidad inválida.");
+                return null;
+            }
+        
+            if (existingProductIndex !== -1) {
+            // Si el producto ya existe, actualizar su cantidad
+                myCarrito.carrito[existingProductIndex].quantity += parseInt(body.quantity);
+            } else {
+            // Si el producto no existe, añadirlo al carrito
+                myCarrito.carrito.push({
+                    quantity: additionalQuantity,
+                    product: productId
+                });
+            }   
+                
+            // Actualiza el carrito en el array de shoppingCarts
+            this.shoppingCarts[cartIndex] = myCarrito;
+    
+            // Guarda el carrito actualizado en el archivo
+            await this.saveData();
+            console.log('Producto agregado al carrito correctamente.');
+            return this.shoppingCarts[cartIndex];
+        } catch (error) {
+            console.error("Error al leer el archivo:", error);
+            throw error;
+        }
+    }
+    
 
     async saveData() {
         await fs.writeFile(this.filePathCarrito, JSON.stringify(this.shoppingCarts, null, 2), 'utf8');
     }
-
-
-
 
 }
 module.exports = CartManager;

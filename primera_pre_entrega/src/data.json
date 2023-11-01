@@ -1,19 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Chaqueta de Fuego",
-    "description": "Una chaqueta mágica que te mantiene caliente incluso en el Ártico. Perfecta para aventuras épicas.",
-    "code": "CF12345678901234",
-    "price": 129.99,
-    "status": true,
-    "stock": 100,
-    "category": "ropa",
-    "thumbnail": [
-      "chaqueta-fuego.jpg",
-      "ulr-image"
-    ]
-  },
-  {
     "id": 2,
     "title": "Botas Lunar",
     "description": "Botas con tecnología lunar que te permiten caminar en la luna. ¡Siente la gravedad cero en tus pies!",
@@ -99,20 +85,6 @@
   },
   {
     "id": 8,
-    "title": "Casco de Traducción Alienígena",
-    "description": "Un casco que te permite entender y hablar cualquier idioma alienígena. Prepárate para el primer contacto.",
-    "code": "CT89012345678901",
-    "price": 249.99,
-    "status": true,
-    "stock": 60,
-    "category": "accesorio",
-    "thumbnail": [
-      "casco-traduccion.jpg",
-      "ulr-image"
-    ]
-  },
-  {
-    "id": 9,
     "title": "Zapatos Voladores",
     "description": "Zapatos que te permiten volar por los cielos como un pájaro. ¡Experimenta la libertad del vuelo!",
     "code": "ZV90123456789012",
@@ -126,7 +98,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 9,
     "title": "Reloj del Tiempo",
     "description": "Un reloj que te permite viajar en el tiempo. Vuelve al pasado o adelántate al futuro con solo tocar la esfera.",
     "code": "RT01234567890123",
@@ -140,84 +112,14 @@
     ]
   },
   {
-    "id": "",
-    "title": "q",
-    "description": ".ssss",
-    "code": "1122344444444",
-    "price": 3,
-    "status": false,
-    "stock": 4,
-    "category": "111",
-    "thumbnail": [
-      "reloj-tiempo.jpg",
-      "ulr-image"
-    ]
-  },
-  {
-    "id": 11,
-    "title": "  ",
-    "description": ".",
-    "code": "aaqqaas00000000",
-    "price": 349.99,
-    "status": true,
-    "stock": 40,
-    "category": "accesorio",
-    "thumbnail": [
-      "reloj-tiempo.jpg",
-      "ulr-image"
-    ]
-  },
-  {
-    "id": 12,
+    "id": 10,
     "title": "  ",
     "description": "2510",
-    "code": "aaqqaas000000001212212",
+    "code": "999",
     "price": 349.99,
     "status": true,
     "stock": 40,
-    "category": "accesorio",
-    "thumbnail": [
-      "reloj-tiempo.jpg",
-      "ulr-image"
-    ]
-  },
-  {
-    "id": 13,
-    "title": "  ",
-    "description": "2510",
-    "code": "aaq1221221=1212121212",
-    "price": 349.99,
-    "status": true,
-    "stock": 40,
-    "category": "accesorio",
-    "thumbnail": [
-      "reloj-tiempo.jpg",
-      "ulr-image"
-    ]
-  },
-  {
-    "id": 14,
-    "title": "  ",
-    "description": "2510",
-    "code": "aaq1221221=1212121212=1010",
-    "price": 349.99,
-    "status": true,
-    "stock": 40,
-    "category": "accesorio",
-    "thumbnail": [
-      "reloj-tiempo.jpg",
-      "ulr-image"
-    ]
-  },
-  {
-    "id": 15,
-    "title": "  ",
-    "description": "2510",
-    "code": "aaq1221221=1212121212=101033333",
-    "price": 349.99,
-    "status": true,
-    "stock": 40,
-    "category": "accesorio",
+    "category": "accesorio99",
     "thumbnail": [
       "reloj-tiempo.jpg",
       "ulr-image"

@@ -1,7 +1,7 @@
 
 
 const express = require('express');
-const usersRouter = require('./routers/users.router');
+const productsRouter = require('./routers/products.router');
 const cartsRouter = require('./routers/carts.router');
 
 const ProductManager = require('./ProductManager');
@@ -11,30 +11,32 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
-async function initializeData() {
-    const filePath = './src/data.json';
-    const manager = new ProductManager(filePath);
-    await manager.init();
+const filePath = './src/data.json';
+const filePathCarrito = './src/carrito.json';
 
-    const filePathCarrito = './src/carrito.json';
-    const cartManager = new CartManager(filePathCarrito);
-    await cartManager.init();
+const productManager = new ProductManager(filePath);
+const cartManager = new CartManager(filePathCarrito);
 
-   //  return { manager, cartManager}; 
-   return manager
+async function initializeProductManager() {
+    await productManager.init();
+    return productManager;
 }
 
+async function initializeCartManager() {
+    await cartManager.init();
+    return cartManager;
+}
 
 app.use(async (req, res, next) => {
-    req.productManager = await initializeData();
-//  req.carttManager = await initializeData();
+    req.productManager = await initializeProductManager();
+    req.cartManager = await initializeCartManager(); 
     next();
 });
 
-app.use('/api/products', usersRouter);
-// app.use('/api/carts', cartsRouter);
+app.use('/api/products', productsRouter);
+app.use('/api/carts', cartsRouter);
 
-app.listen(8080, () => {
+app.listen(8083, () => {
     console.log('Servidor http escuchando en el puerto 8080.');
 })
 

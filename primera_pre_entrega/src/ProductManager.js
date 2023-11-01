@@ -90,40 +90,31 @@ class ProductManager {
             const data = await fs.readFile(this.filePath, 'utf8');
             this.products = JSON.parse(data);
 
-            if (!newData.id) {
-                console.error("id no puede ser nulo");
+            if (newData.id) {
+                console.error("payload incorrecto : id no permitido en request");
                 return null; 
             }
-    
-
             const productIndex = this.products.findIndex(product => product.id === parseInt(id));
             if (productIndex === -1) {
                 console.error("Error: Producto no encontrado.");
                 return null; 
             }
-
              // Validar si el ID en newData coincide con el ID en req.params.id
             if (newData.id && newData.id !== parseInt(id)) {
                 console.error("Error: El ID en newData no coincide con el ID en req.params.");
                 return null; 
             }
-
-
-           
-
            // Validar si el ID en newData ya existe en otro producto
             const existingProductIndex = this.products.findIndex(product => product.id === newData.id);
             if (existingProductIndex !== -1 && existingProductIndex !== productIndex) {
                 console.error("Error: El ID en newData ya existe en otro producto.");
                 return null; 
             }
-
             if (this.products.some(product => product.code === newData.code)) {
                 //  throw new Error("El campo 'code' no puede repetirse.");
                   console.error("El campo 'code' no puede repetirse.");
                   return null; 
             }      
-
             // Actualizar el producto con los nuevos datos
             this.products[productIndex] = { ...this.products[productIndex], ...newData };
             // Guardarr en el archivo

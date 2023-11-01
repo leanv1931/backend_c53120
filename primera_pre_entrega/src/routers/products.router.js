@@ -3,9 +3,9 @@ const router = Router();
 
 
 router.get('/', async (req, res) => {
-    const { productManager } = req;
+    const { productManager } = req.productManager;
     const limit = req.query.limit;
-    let responseProducts = await productManager.getProducts();
+    let responseProducts = await req.productManager.getProducts();
 
     if (limit && !isNaN(limit)) {
         limit = parseInt(limit);
@@ -20,7 +20,7 @@ router.get('/:pid', async (req, res) => {
     console.log('param es ', pid);
     pid = parseInt(pid);
   
-    let productoFiltrado = await productManager.getProductById(pid);
+    let productoFiltrado = await req.productManager.getProductById(pid);
   
     if (productoFiltrado) {
         res.json(productoFiltrado);
@@ -32,7 +32,7 @@ router.get('/:pid', async (req, res) => {
 router.post('/', async (req, res) => {
     const { productManager } = req;
     const { body } = req;
-    let productoCreado = await productManager.addProduct(body);
+    let productoCreado = await req.productManager.addProduct(body);
   
     if (productoCreado) {
         res.status(201).json({ message: 'El producto fue creado con exito', product: body });
@@ -42,14 +42,13 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:pid', async (req, res) => {
-    const { productManager } = req;
     const { body, params } = req;
     const userId = params.pid;
   
-    let productoActualizado = await productManager.updateProductById(userId, body);
+    let productoActualizado = await req.productManager.updateProductById(userId, body);
   
     if (productoActualizado) {
-        res.status(200).json({ message: 'El usuario fue actualizado correctamente 😅', product: productoActualizado});
+        res.status(200).json({ message: 'El usuario fue actualizado correctamente', product: productoActualizado});
     } else {
         res.status(404).json({ error: 'ID no se puede actualizar o ID no encontrado' });
     }
@@ -60,7 +59,7 @@ router.delete('/:uid', async (req, res) => {
     const { params } = req;
     const userId = params.uid;
 
-    let deletedId = await productManager.deleteProductById(userId);
+    let deletedId = await req.productManager.deleteProductById(userId);
     if (deletedId) {
         res.status(200).json({  message: 'El usuario se elimino correctamente 😅', userDeleted: deletedId});
     } else {
