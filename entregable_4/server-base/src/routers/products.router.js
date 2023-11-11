@@ -4,6 +4,7 @@ const router = Router();
 
 router.get('/', async (req, res) => {
   let responseProducts = await req.productManager.getProducts();
+  res.status(200).json(responseProducts);
  // res.render('index', { title: 'index 😎', responseProducts });
 });
 

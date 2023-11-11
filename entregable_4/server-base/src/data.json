@@ -1,23 +1,18 @@
 [
   {
     "id": 1,
-    "title": "Botas Lunar",
-    "description": "Botas con tecnología lunar que te permiten caminar en la luna. ¡Siente la gravedad cero en tus pies!",
-    "code": "BL23456789QQQQQ012345",
-    "price": 199.99,
-    "status": true,
-    "stock": 80,
-    "category": "calzado",
-    "thumbnail": [
-      "botas-lunar.jpg",
-      "ulr-image"
-    ]
+    "title": "Chaqueta de Fuego",
+    "description": "Una chaqueta mágica que te mantiene caliente incluso en el Ártico. Perfecta para aventuras épicas.",
+    "price": 129.99,
+    "thumbnail": "chaqueta-fuego.jpg",
+    "code": "AAA-111",
+    "stock": 1004
   },
   {
     "id": 2,
     "title": "Botas Lunar",
     "description": "Botas con tecnología lunar que te permiten caminar en la luna. ¡Siente la gravedad cero en tus pies!",
-    "code": "BL23456789QQQQQ012345--23",
+    "code": "BL23456789012345",
     "price": 199.99,
     "status": true,
     "stock": 80,
@@ -29,15 +24,113 @@
   },
   {
     "id": 3,
-    "title": "Botas Lunar",
-    "description": "Botas con tecnología lunar que te permiten caminar en la luna. ¡Siente la gravedad cero en tus pies!",
-    "code": "BL23456789QQQQQ012345-444",
+    "title": "Capa de Invisibilidad",
+    "description": "Con esta capa, puedes volverte invisible a voluntad. Perfecta para escapar de situaciones incómodas.",
+    "code": "CI34567890123456",
+    "price": 299.99,
+    "status": true,
+    "stock": 50,
+    "category": "accesorio",
+    "thumbnail": [
+      "capa-invisibilidad.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gafas de Realidad Virtual",
+    "description": "Gafas que te transportan a mundos virtuales asombrosos. Vive aventuras sin salir de casa.",
+    "code": "GR45678901234567",
+    "price": 149.99,
+    "status": true,
+    "stock": 120,
+    "category": "accesorio",
+    "thumbnail": [
+      "gafas-realidad-virtual.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Sombrero del Tiempo",
+    "description": "Un sombrero que te permite controlar el clima. ¡Lleva contigo un pedazo del cielo a donde vayas!",
+    "code": "ST56789012345678",
+    "price": 79.99,
+    "status": true,
+    "stock": 90,
+    "category": "accesorio",
+    "thumbnail": [
+      "sombrero-tiempo.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Guantes Magnéticos",
+    "description": "Guantes que te permiten manipular objetos metálicos a distancia. Siente el poder de la atracción.",
+    "code": "GM67890123456789",
+    "price": 89.99,
+    "status": true,
+    "stock": 70,
+    "category": "accesorio",
+    "thumbnail": [
+      "guantes-magneticos.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Bolsa de Viaje Dimensional",
+    "description": "Una bolsa que siempre tiene suficiente espacio. ¡Guarda todo lo que necesitas para tus aventuras interdimensionales!",
+    "code": "BV78901234567890",
+    "price": 169.99,
+    "status": true,
+    "stock": 110,
+    "category": "accesorio",
+    "thumbnail": [
+      "bolsa-viaje-dimensional.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Zapatos Voladores",
+    "description": "Zapatos que te permiten volar por los cielos como un pájaro. ¡Experimenta la libertad del vuelo!",
+    "code": "ZV90123456789012",
     "price": 199.99,
     "status": true,
-    "stock": 80,
+    "stock": 100,
     "category": "calzado",
     "thumbnail": [
-      "botas-lunar.jpg",
+      "zapatos-voladores.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Reloj del Tiempo",
+    "description": "Un reloj que te permite viajar en el tiempo. Vuelve al pasado o adelántate al futuro con solo tocar la esfera.",
+    "code": "RT01234567890123",
+    "price": 349.99,
+    "status": true,
+    "stock": 40,
+    "category": "accesorio",
+    "thumbnail": [
+      "reloj-tiempo.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "  ",
+    "description": "2510",
+    "code": "999",
+    "price": 349.99,
+    "status": true,
+    "stock": 40,
+    "category": "accesorio99",
+    "thumbnail": [
+      "reloj-tiempo.jpg",
       "ulr-image"
     ]
   }
