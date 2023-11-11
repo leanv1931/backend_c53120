@@ -4,13 +4,10 @@ const router = Router();
 
 router.get('/', async (req, res) => {
   let responseProducts = await req.productManager.getProducts();
-
-
 //   res.json(responseProducts); 
 //   res.render('index', { title: 'Products handlebars 🚀', responseProducts });
 
  // res.render('real', { title: 'realTimeProducts 😎', responseProducts });
-
   res.render('real', { title: 'real 😎', responseProducts });
 
 });
