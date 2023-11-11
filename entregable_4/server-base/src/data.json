@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Botas Lunar",
+    "description": "Botas con tecnología lunar que te permiten caminar en la luna. ¡Siente la gravedad cero en tus pies!",
+    "code": "BL23456789QQQQQ012345",
+    "price": 199.99,
+    "status": true,
+    "stock": 80,
+    "category": "calzado",
+    "thumbnail": [
+      "botas-lunar.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Botas Lunar",
+    "description": "Botas con tecnología lunar que te permiten caminar en la luna. ¡Siente la gravedad cero en tus pies!",
+    "code": "BL23456789QQQQQ01234-QA22",
+    "price": 199.99,
+    "status": true,
+    "stock": 80,
+    "category": "calzado",
+    "thumbnail": [
+      "botas-lunar.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Botas Lunar",
+    "description": "Botas con tecnología lunar que te permiten caminar en la luna. ¡Siente la gravedad cero en tus pies!",
+    "code": "BL23456789QQQQQ012345-33",
+    "price": 199.99,
+    "status": true,
+    "stock": 80,
+    "category": "calzado",
+    "thumbnail": [
+      "botas-lunar.jpg",
+      "ulr-image"
+    ]
+  }
+]

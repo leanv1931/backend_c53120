@@ -1,0 +1,34 @@
+ <h1>INDEX handlebars 😎</h1>
+<div>
+  <h1>Lista de productos 😎</h1>
+    {{#each responseProducts}}
+      <div>
+        <p><strong>ID</strong>: {{this.id}}</p>
+        <p><strong>Titulo</strong>: {{this.title}}</p>
+        <p><strong>Description</strong>: {{this.description}}</p>
+        <p><strong>Code</strong>: {{this.code}}</p>
+        <p><strong>Price</strong>: {{this.price}}</p>
+        <p><strong>Status</strong>: {{this.status}}</p>
+        <p><strong>Stock</strong>: {{this.stock}}</p>
+        <p><strong>Category</strong>: {{this.category}}</p>
+        <hr/>
+        <hr/>
+      </div>
+    {{/each}}
+</div>
+
+
+
+<div>
+  <h1>Conversation CH 😎</h1>
+  <form id="form-message">
+    <input id="input-message" type="text" required>
+    <input type="submit" value="enviar">
+  </form>
+  <ul id="list-message"></ul>
+</div>
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/index.js"></script>
