@@ -1,16 +1,11 @@
-
-
 const socket = io();
-
 
 
 socket.on('mostrar-productos',({ responseProducts }) => {
   const listMessage = document.getElementById('list-message');
   listMessage.innerText = '';
-
   responseProducts.forEach((data) => {
     const li = document.createElement('li');
-
     const productInfo = `
     <strong>ID:</strong> ${data.id}<br>
     <strong>Title:</strong> ${data.title}<br>
@@ -21,7 +16,6 @@ socket.on('mostrar-productos',({ responseProducts }) => {
     <strong>Stock:</strong> ${data.stock}<br>
     <strong>Category:</strong> ${data.category}<br>
    `;
-
   li.innerHTML = productInfo;
   listMessage.appendChild(li);
   });

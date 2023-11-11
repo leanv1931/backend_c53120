@@ -4,12 +4,7 @@ const router = Router();
 
 router.get('/', async (req, res) => {
   let responseProducts = await req.productManager.getProducts();
-//   res.json(responseProducts); 
-//   res.render('index', { title: 'Products handlebars 🚀', responseProducts });
-
- // res.render('real', { title: 'realTimeProducts 😎', responseProducts });
-  res.render('real', { title: 'real 😎', responseProducts });
-
+ // res.render('index', { title: 'index 😎', responseProducts });
 });
 
 
@@ -28,17 +23,11 @@ router.delete('/:uid', async (req, res) => {
 router.get('/:pid', async (req, res) => {
   let { pid } = req.params;
   console.log('param es ', pid);
-  pid = parseInt(pid);
-
   let productoFiltrado = await req.productManager.getProductById(pid);
 
   if (productoFiltrado) {
-      res.json(productoFiltrado);
-  } else {
-      res.status(404).json({ error: 'Producto no encontrado desde servidor express' });
+      res.render(productoFiltrado);
   }
 });
 
 export default router;
-
-
