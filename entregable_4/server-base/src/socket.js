@@ -10,9 +10,9 @@ let socketServer;
 
 export const init = (httpServer) => {
   socketServer = new Server(httpServer);
+  
   socketServer.on('connection', (socketClient) => {
     console.log(`Nuevo cliente socket conectado ${socketClient.id} 🎊`);
     socketServer.emit('mostrar-productos', {responseProducts} );
-
   });
 }

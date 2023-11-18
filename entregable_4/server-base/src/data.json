@@ -133,5 +133,33 @@
       "reloj-tiempo.jpg",
       "ulr-image"
     ]
+  },
+  {
+    "id": 11,
+    "title": " SOY ONCE ",
+    "description": "2510",
+    "code": "999-QA11111",
+    "price": 349.99,
+    "status": true,
+    "stock": 40,
+    "category": "accesorio-11",
+    "thumbnail": [
+      "reloj-tiempo.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 12,
+    "title": " SOY 12 ",
+    "description": "2510",
+    "code": "999-QA11111-QA12",
+    "price": 349.99,
+    "status": true,
+    "stock": 40,
+    "category": "accesorio-112",
+    "thumbnail": [
+      "reloj-tiempo.jpg",
+      "ulr-image"
+    ]
   }
 ]

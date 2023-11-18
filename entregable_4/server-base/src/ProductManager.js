@@ -1,16 +1,12 @@
 
 import { promises as fsPromises } from 'fs';
 
-
-
 class ProductManager {
     constructor(filePath) {
         this.filePath = filePath;
         this.products = [];
         this.nextProductId = 1; // Inicializa el ID autoincrementable
     }
-
-
 
     async init() {
         try {
@@ -39,6 +35,7 @@ class ProductManager {
         try {
             const data = await fsPromises.readFile(this.filePath, 'utf8');
             this.products = JSON.parse(data);
+            id = parseInt(id);
             
             const product = this.products.find(product => product.id === id);
             if (!product) {

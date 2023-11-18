@@ -27,8 +27,24 @@ router.get('/:pid', async (req, res) => {
   let productoFiltrado = await req.productManager.getProductById(pid);
 
   if (productoFiltrado) {
-      res.render(productoFiltrado);
+    res.json(productoFiltrado);
+   // res.render(productoFiltrado);
+  } else {
+    res.status(404).json({ error: 'Producto no encontrado desde servidor express' });
   }
 });
+
+
+router.post('/', async (req, res) => {
+  const { body } = req;
+  let productoCreado = await req.productManager.addProduct(body);
+
+  if (productoCreado) {
+      res.status(201).json({ message: 'El producto fue creado con exito', product: body });
+  } else {
+      res.status(404).json({ error: 'el producto no pudo crearse'});
+  }
+});
+
 
 export default router;
