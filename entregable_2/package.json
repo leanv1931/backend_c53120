@@ -1,14 +1,14 @@
 {
-  "name": "entregable_2",
+  "name": "entrega2",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "dependencies": {
-    "fs.promises": "^0.1.2"
-  },
-  "devDependencies": {},
+  "description": "entregable numero 2",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "backend_c53120"
   },
   "author": "",
   "license": "ISC"
