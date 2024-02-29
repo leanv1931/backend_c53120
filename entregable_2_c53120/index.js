@@ -36,7 +36,6 @@ async function main() {
     console.log('##########################');
     console.log('##########################');
     console.log('##########################');
-    console.log('##########################');
     console.log('########### 6.DELETE PRODUCT###############');
     await manager.deleteProduct(1);
 }
