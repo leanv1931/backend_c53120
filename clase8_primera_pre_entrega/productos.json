@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "title": "Gafas de Realidad Virtual",
+    "description": "Gafas que te transportan a mundos virtuales asombrosos. Vive aventuras sin salir de casa.",
+    "price": 149.99,
+    "thumbnail": "gafas-realidad-virtual.jpg",
+    "code": "23032024-GR45678901234567",
+    "stock": 120,
+    "status": true,
+    "category": "Accesorios"
+  },
+  {
+    "id": 2,
+    "title": "Botas Lunar",
+    "description": "Botas con tecnología lunar que te permiten caminar en la luna. ¡Siente la gravedad cero en tus pies!",
+    "code": "BL23456789012345",
+    "price": 199.99,
+    "status": true,
+    "stock": 80,
+    "category": "calzado",
+    "thumbnail": [
+      "botas-lunar.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Capa de Invisibilidad",
+    "description": "Con esta capa, puedes volverte invisible a voluntad. Perfecta para escapar de situaciones incómodas.",
+    "code": "CI34567890123456",
+    "price": 299.99,
+    "status": true,
+    "stock": 50,
+    "category": "accesorio",
+    "thumbnail": [
+      "capa-invisibilidad.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gafas de Realidad Virtual",
+    "description": "Gafas que te transportan a mundos virtuales asombrosos. Vive aventuras sin salir de casa.",
+    "code": "GR45678901234567",
+    "price": 149.99,
+    "status": true,
+    "stock": 120,
+    "category": "accesorio",
+    "thumbnail": [
+      "gafas-realidad-virtual.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Sombrero del Tiempo",
+    "description": "Un sombrero que te permite controlar el clima. ¡Lleva contigo un pedazo del cielo a donde vayas!",
+    "code": "ST56789012345678",
+    "price": 79.99,
+    "status": true,
+    "stock": 90,
+    "category": "accesorio",
+    "thumbnail": [
+      "sombrero-tiempo.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Guantes Magnéticos",
+    "description": "Guantes que te permiten manipular objetos metálicos a distancia. Siente el poder de la atracción.",
+    "code": "GM67890123456789",
+    "price": 89.99,
+    "status": true,
+    "stock": 70,
+    "category": "accesorio",
+    "thumbnail": [
+      "guantes-magneticos.jpg",
+      "ulr-image"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "G Apple",
+    "description": "Vive aventuras sin salir de casa.",
+    "code": "BV78901234567890",
+    "price": 1111000,
+    "status": true,
+    "stock": 12000,
+    "category": "Accesorios-230324",
+    "thumbnail": ".jpg"
+  }
+]

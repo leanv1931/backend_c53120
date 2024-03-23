@@ -1,0 +1,97 @@
+[
+  {
+    "id": 4,
+    "carrito": [
+      {
+        "quantity": 203,
+        "product": 1
+      },
+      {
+        "quantity": 203,
+        "product": 2
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "carrito": [
+      {
+        "quantity": 15203,
+        "product": 1
+      },
+      {
+        "quantity": 203,
+        "product": 2
+      },
+      {
+        "quantity": 6560,
+        "product": 7
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "carrito": [
+      {
+        "product": 1,
+        "quantity": 2442
+      },
+      {
+        "quantity": 203,
+        "product": 2
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "carrito": [
+      {
+        "product": 1,
+        "quantity": null
+      },
+      {
+        "quantity": 203,
+        "product": 2
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "carrito": [
+      {
+        "quantity": 20,
+        "product": 1
+      },
+      {
+        "quantity": 203,
+        "product": 2
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "carrito": [
+      {
+        "quantity": 20,
+        "product": 1
+      },
+      {
+        "quantity": 203,
+        "product": 2
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "carrito": [
+      {
+        "quantity": 20,
+        "product": 10
+      },
+      {
+        "quantity": 203,
+        "product": 2
+      }
+    ]
+  }
+]
